@@ -1,0 +1,237 @@
+/* General design*/
+*{
+    font-family: 'Raleway', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.mainContent{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+/* Left section*/
+.leftSection{
+    grid-column: span 2;
+    height: 100%;
+}
+
+.leftMainContent{
+    background-color:#a26769;
+    padding: 4rem 2rem;
+}
+
+/*Profile*/
+.profile{
+    width: 100%;
+}
+
+    /* Profile Image*/
+.profile img{
+    width: 100%;
+}
+    /*Profile Name*/
+.name{
+    font-size: 1.8rem;
+    color:#fffeff;
+    text-align: center;
+    padding: 1.2rem 0;
+}
+    /*Profile Career*/
+.career{
+    font-size: 1.2rem;
+    color:#fffeff;
+    text-align: center;
+}
+
+/*Contact*/
+.contact{
+    width: 100%;
+}
+.contact .leftTitle{
+    font-size: 1rem;
+    color: #fffeff;
+    padding-top: 1.2rem;
+}
+
+.contact ul{
+    padding:1rem 0;
+}
+.contact ul li{
+    padding: 0.2rem 0;
+    list-style: none;
+    font-size:1rem;
+    color: #fffeff;
+    display: flex;
+    align-items: center;
+}
+.contact ul li a{
+    text-decoration: none;
+    color: #fef7ff;
+}
+.contact ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Skills*/
+.skills{
+    width: 100%;
+    padding:0.2rem 0;
+}
+.skills .leftTitle{
+    font-size: 1rem;
+    color: #fffeff;
+    padding-top: 1.2rem;
+}
+
+.skills ul{
+    padding: 1rem 0;
+}
+
+.skills ul li{
+    padding: 0.2rem 0;
+    font-size:1rem;
+    color: #fffeff;
+    list-style: circle;
+}
+/*Right section*/
+.rightSection{
+    background-color: #ece2d0;
+    grid-column: span 5;
+    height: 100%;
+}
+.rightMainContent{
+    padding: 1rem 2rem;
+}
+.rightSection .rightTitle{
+    color:#6d2e46;
+    padding-top: 0.8rem;
+    padding-bottom: 1.2rem;
+}
+.rightSection p{
+    color:#6d2e46;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+.rightSection .rightSubtitle1{
+    color: #6d2e46;
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
+}
+.rightSection .rightSubtitle2{
+    color: #6d2e46;
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
+    font-style:normal;
+}
+
+.rightSection ul{
+    list-style: circle;
+    color:#6d2e46;
+}
+
+/*Media queries*/
+@media screen and (max-width:320px){
+    .leftSection{
+        grid-column: span 8;
+    }
+    .contact ul li{
+        font-size: 14px;
+    }
+    .profile img{
+        width: 80%;
+        align-self: center;
+    }
+    .rightSection{
+        grid-column: span 9;
+    }
+}
+@media screen and (max-width:499px){
+    .leftSection{
+        grid-column: span 8;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .career{
+        font-size: 22px; 
+    }
+    .profile img{
+        width: 80%;
+        padding-left: 4rem;
+    }
+    .contact ul li{
+        font-size: 15px;
+    }
+
+    .rightSection{
+        grid-column: span 9;
+    }
+}
+@media screen and (max-width:560px){
+    .leftSection{
+        grid-column: span 8;
+    }
+    .profile img{
+        width: 80%;
+        padding-left: 4rem;
+    }
+    .rightSection{
+        grid-column: span 9;
+    }
+}
+
+@media screen and (max-width:680px){
+    .leftSection{
+        grid-column: span 7;
+    }
+    .profile img{
+        width: 80%;
+        padding-left: 4rem;
+    }
+    .rightSection{
+        grid-column: span 7;
+    }
+}
+@media screen and (max-width:720px){
+    .leftSection{
+        grid-column: span 7;
+    }
+    .profile img{
+        width: 80%;
+        padding-left: 4rem;
+    }
+    .contact ul li{
+        font-size: 15px;
+    }
+    .rightSection{
+        grid-column: span 7;
+    }
+}
+@media screen and (max-width:850px){
+    .leftSection{
+        grid-column: span 3;
+    }
+    .rightSection{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:985px){
+    .leftSection{
+        grid-column: span 3;
+    }
+    .rightSection{
+        grid-column: span 4;
+    }
+}
+
+@media screen and (max-width:1170px){
+    .leftSection{
+        grid-column: span 3;
+    }
+    .rightSection{
+        grid-column: span 4;
+    }
+}
